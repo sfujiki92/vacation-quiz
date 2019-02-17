@@ -1,3 +1,7 @@
+#destination {
+  display: none;
+}
+
 .img-responsive {
   width: 100%;
   height: auto;

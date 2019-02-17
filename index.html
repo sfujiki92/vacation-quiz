@@ -13,8 +13,8 @@
         <h1>Where Should You Book Your Next Vacation?</h1>
         <p>Take this quiz to find out!</p>
       </div>
-      <form>
-          <h2>Which landscape do you prefer?</h2>
+      <form id="content">
+        <h2>Which landscape do you prefer?</h2>
           <div class="row">
             <div class="col-md-4">
             <div class="radio">
@@ -26,6 +26,7 @@
               <br>
             </div>
             </div>
+
             <div class="col-md-4">
             <div class="radio">
               <label>
@@ -36,47 +37,54 @@
               <br>
             </div>
             </div>
+
             <div class="col-md-4">
             <div class="radio">
               <label>
                 <input type="radio" name="landscape" value="mountains" checked>
-                Moutains
+                Mountains
               </label>
               <img class="img-responsive" src="img/mountain.jpg" alt="picture of a mountain">
             </div>
             </div>
           </div>
 
-          <h2>What activity do you enjoy?</h2>
-          <div class="radio">
-            <label>
-              <input type="radio" name="activity" value="surfing" checked>
-              Surfing
-            </label><br>
-            <label>
-              <input type="radio" name="activity" value="skiing" checked>
-              Skiing
-            </label><br>
-            <label>
-              <input type="radio" name="activity" value="broadway" checked>
-              Broadway musicals
-            </label>
-          </div>
-          <h2>Choose a food:</h2>
+        <h2>What activity do you enjoy?</h2>
+          <div class="row">
             <div class="radio">
               <label>
-                <input type="radio" name="food" value="bbq" checked>
-                BBQ
+                <input type="radio" name="activity" value="surfing" checked>
+                Surfing
               </label><br>
               <label>
-                <input type="radio" name="food" value="fondue" checked>
-                Fondue
+                <input type="radio" name="activity" value="skiing" checked>
+                Skiing
               </label><br>
               <label>
-                <input type="radio" name="food" value="hotdog" checked>
-                Hot Dogs
+                <input type="radio" name="activity" value="broadway" checked>
+                Broadway musicals
               </label>
             </div>
+          </div>
+
+        <div class="row">
+          <h2>Choose a food:</h2>
+          <div class="radio">
+            <label>
+              <input type="radio" name="food" value="bbq" checked>
+              BBQ
+            </label><br>
+            <label>
+              <input type="radio" name="food" value="fondue" checked>
+              Fondue
+            </label><br>
+            <label>
+              <input type="radio" name="food" value="hotdog" checked>
+              Hot Dogs
+            </label>
+          </div>
+
+          <div class="row">
             <h2>What's your preferred mode of travel?</h2>
             <div class="radio">
               <label>
@@ -92,6 +100,9 @@
                 Motorcycle
               </label>
             </div>
+          </div>
+
+          <div class="row">
             <h2>What's your favorite color?</h2>
             <div class="radio">
               <label>
@@ -107,8 +118,16 @@
                 Blue
               </label>
             </div>
-            <button type="submit" name="button">Submit Quiz</button>
+          </div>
+
+        <button type="submit" name="button">Submit Quiz</button>
       </form>
+
+      <div id="destination">
+        <h2>Your next vacation spot is <span class="destination"></span></h2>
+        <p><span class="name"></span>You love ....</p>
+      </div>
+
     </div>
   </body>
 </html>
